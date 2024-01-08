@@ -1,12 +1,32 @@
 #HTMLReader documentation
+#Version 1.3.1
+
+#Short names meanings
+IP Include Parameter - Must include this parameter and cannot be nil.
+RP Recommended Parameter - Optional parameter but is recommended to add.
+OP Optional Parameter - Optional parameter meaning it is unnecessary to add but you have the option to.
+
+EN Enum Name - String has to be the same as a premade name.
+UN Unique Name - The name cannot/shouldn't be used more than one place (In most cases the script won't error but some functionality might work incorrectly).
+SN String Name - The name can be anything in a string and does not need to be unique, spacebar will split arguments in some cases and special characters is not recommended.
+
+
 
 #html parameter
 
-{} - First is just a list of all elements
-element - div/p (More comming soon)
+Ids comming in version 1.4.1
+Classes comming in version 1.5.1
+
+{} - First is just an array of all elements
+element - IP,EN - div/p/btn (More comming soon) The tag name for the element.
+name - RP,UN - The name for the Roblox instance, recommended for use through Roblox's usual functionalities.
+id - OP,UN - Unique key for the element, more optimized than class for single element.
+class - OP,SN - Used for syntaxing multiple elements with a shared classname.
 
 example: html:{{element:"TAG_NAME (div/p/btn)",name:"OPTIONAL_NAME_HERE_FOR_ROBLOX_USEAGE_RECOMMENDED",id:"MUST_BE_UNIQUE_PARAMETER_OPTIONAL",class:"PARAMETER_OPTIONAL_SPLIT_CLASSNAMES_WITH_SPACEBAR ANOTHER_CLASS"},} FILL
+Reminder TODO (for myself) Return GuiTableFuncResult and Ids dictionary
 
 #css parameter (WIP, ignore css for now)
+Likely comming in version 1.9.1
 
 example: css:{{target="#id_here #another_id .class_here .another_class .third_class tag_here another_tag"}}
