@@ -1,0 +1,12 @@
+#HTMLReader documentation
+
+#html parameter
+
+{} - First is just a list of all elements
+element - div/p (More comming soon)
+
+example: html:{{element:"TAG_NAME (div/p/btn)",name:"OPTIONAL_NAME_HERE_FOR_ROBLOX_USEAGE_RECOMMENDED",id:"MUST_BE_UNIQUE_PARAMETER_OPTIONAL",class:"PARAMETER_OPTIONAL_SPLIT_CLASSNAMES_WITH_SPACEBAR ANOTHER_CLASS"},} FILL
+
+#css parameter (WIP, ignore css for now)
+
+example: css:{{target="#id_here #another_id .class_here .another_class .third_class tag_here another_tag"}}
