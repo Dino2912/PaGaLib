@@ -17,16 +17,20 @@ SN String Name - The name can be anything in a string and does not need to be un
 Ids comming in version 1.4.1
 Classes comming in version 1.5.1
 
-{} - First is just an array of all elements
+{} - First is just an array of all elements.
 element - IP,EN - div/p/btn (More comming soon) The tag name for the element.
 name - RP,UN - The name for the Roblox instance, recommended for use through Roblox's usual functionalities.
 id - OP,UN - Unique key for the element, more optimized than class for single element.
 class - OP,SN - Used for syntaxing multiple elements with a shared classname.
 
-example: html:{{element:"TAG_NAME (div/p/btn)",name:"OPTIONAL_NAME_HERE_FOR_ROBLOX_USEAGE_RECOMMENDED",id:"MUST_BE_UNIQUE_PARAMETER_OPTIONAL",class:"PARAMETER_OPTIONAL_SPLIT_CLASSNAMES_WITH_SPACEBAR ANOTHER_CLASS"},} FILL
+example: html:{}
 Reminder TODO (for myself) Return GuiTableFuncResult and Ids dictionary
 
 #css parameter (WIP, ignore css for now)
 Likely comming in version 1.9.1
 
-example: css:{{target="#id_here #another_id .class_here .another_class .third_class tag_here another_tag"}}
+{} - First is just an array of all css modifications.
+targets - N/A - String of tags, classes and ids seperated by spaces that the properties will affect.
+attributes - N/A - The css functions that the targets will have applied.
+
+example: css:{{targets="#id_here #another_id .class_here .another_class .third_class tag_here another_tag",attributes={"Width","69%"},}
